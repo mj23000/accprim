@@ -15,7 +15,7 @@ startWatch();
 
 //måler acceleration i bestemte intervaller
 function startWatch() {
-var options = { frequency: 100 };//vis værdi hvert sekund
+var options = { frequency: 5 };//vis værdi hvert sekund
 watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options); //
 }
 
@@ -49,24 +49,9 @@ document.getElementById('accelerometer').innerHTML =
 'Acceleration Y: ' + accY + '<br />' +
 'Acceleration Z: ' + accZ + '<br />' +
 'Timestamp: ' + timestamp + '<br />'
-'primtal: ' + primtal + '<br />';
+'primtal: ' + j + '<br />';
 
 }
-
-function primUdregn(){
-var primtal=accX*37;
-	for(var j=1;j<=primtal;j++){
-		prim=1;	
-		for(var i=2;i<j;i++){
-			z=j%i;
-			if (z==0)
-				prim=0;
-		}
-		if (prim==1)
-			document.getElementById("primsvar").innerHTML += j+" ";
-	}
-}
-
 
 function onError() {
 alert('onError!');
