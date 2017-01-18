@@ -1,20 +1,7 @@
 var watchID = null;
 var z=0;
 var prim=1;
-var primtal=accX*37;
-
-function primUdregn(){
-	for(var j=1;j<=primtal;j++){
-		prim=1;	
-		for(var i=2;i<j;i++){
-			z=j%i;
-			if (z==0)
-				prim=0;
-		}
-		if (prim==1)
-			document.getElementById("primsvar").innerHTML += j+" ";
-	}
-}
+var primtal=10000;
 
 //I onLoad tilføjes eventlistener
 function onLoad(){
@@ -52,6 +39,21 @@ document.getElementById('accelerometer').innerHTML =
 'Acceleration Z: ' + accZ + '<br />' +
 'Timestamp: ' + timestamp + '<br />';
 }
+
+function primUdregn(){
+var primtal=accX*37;
+	for(var j=1;j<=primtal;j++){
+		prim=1;	
+		for(var i=2;i<j;i++){
+			z=j%i;
+			if (z==0)
+				prim=0;
+		}
+		if (prim==1)
+			document.getElementById("primsvar").innerHTML += j+" ";
+	}
+}
+
 
 function onError() {
 alert('onError!');
