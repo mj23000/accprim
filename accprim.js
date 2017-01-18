@@ -32,7 +32,7 @@ var accX = acceleration.x ;
 var accY = acceleration.y;
 var accZ = acceleration.z;
 var timestamp = acceleration.timestamp;
-var primtal = accX*37;
+var primtal = accY*37;
 //Udskriv værdier i div med navnet accelerometer
 for(var j=1;j<=primtal;j++){
 		prim=1;	
@@ -45,10 +45,10 @@ for(var j=1;j<=primtal;j++){
 			document.getElementById("primsvar").innerHTML += j+" ";
 	}
 document.getElementById('accelerometer').innerHTML = 
-'Acceleration X: ' + accX + '<br/>' +
+'Acceleration X: ' + accX + '<br />' +
 'Acceleration Y: ' + accY + '<br />' +
 'Acceleration Z: ' + accZ + '<br />' +
-'Timestamp: ' + timestamp + '<br />'
+'Timestamp: ' + timestamp + '<br />' +
 'primtal: ' + j + '<br />';
 
 }
