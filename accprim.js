@@ -49,7 +49,6 @@ document.getElementById('accelerometer').innerHTML =
 'Acceleration Y: ' + accY + '<br />' +
 'Acceleration Z: ' + accZ + '<br />' +
 'Timestamp: ' + timestamp + '<br />' ;
-
 }
 
 function onError() {
