@@ -42,13 +42,13 @@ for(var j=1;j<=primtal;j++){
 				prim=0;
 		}
 		if (prim==1)
-			document.getElementById("primsvar").innerHTML += j+" ";
+			document.getElementById("acceleration").innerHTML += j+" ";
 	}
 document.getElementById('accelerometer').innerHTML = 
 'Acceleration X: ' + accX + '<br />' +
 'Acceleration Y: ' + accY + '<br />' +
 'Acceleration Z: ' + accZ + '<br />' +
-'primtal       : ' +  j   + '<br />' +
+//'primtal       : ' +  j   + '<br />' +
 'Timestamp	   : ' + timestamp + '<br />' ;
 }
 
