@@ -15,7 +15,7 @@ startWatch();
 
 //måler acceleration i bestemte intervaller
 function startWatch() {
-var options = { frequency: 50 };//vis værdi hvert sekund
+var options = { frequency: 10 };//vis værdi hvert sekund
 watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options); //
 }
 
