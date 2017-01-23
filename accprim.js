@@ -32,23 +32,23 @@ var accX = acceleration.x;
 var accY = acceleration.y;
 var accZ = acceleration.z;
 var timestamp = acceleration.timestamp;
+var primtal = accX*37;
 //Udskriv værdier i div med navnet accelerometer
 
 document.getElementById('accelerometer').innerHTML = 
 'Acceleration X: ' + accX + '<br />' +
 'Acceleration Y: ' + accY + '<br />' +
 'Acceleration Z: ' + accZ + '<br />' +
-'Primtal: ' + j + '<br />' +
-'Timestamp: ' + timestamp + '<br />' ;
+'Timestamp	   : ' + timestamp + '<br />' ;
 }
 
 function onError() {
 alert('onError!');
 }
 
+
 function primUdregn(){
-	var primtal = accY*37;	
-for(var j=1;j<=primtal;j++){
+	for(var j=1;j<=primtal;j++){
 		prim=1;	
 		for(var i=2;i<j;i++){
 			z=j%i;
@@ -57,4 +57,8 @@ for(var j=1;j<=primtal;j++){
 		}
 		if (prim==1)
 			document.getElementById("primsvar").innerHTML += j+" ";
-}}
+	}
+}
+
+
+
