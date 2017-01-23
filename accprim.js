@@ -56,7 +56,7 @@ document.getElementById('accelerometer').innerHTML =
 'Acceleration X: ' + accX + '<br />' +
 'Acceleration Y: ' + accY + '<br />' +
 'Acceleration Z: ' + accZ + '<br />' +
-'primtal       : ' +     + '<br />' +
+'primtal       : ' + "ikke et primtal " + <br />' +
 'Timestamp	   : ' + timestamp + '<br />' ;
 	}
 }
