@@ -1,7 +1,7 @@
 var watchID = null;
 var z=0;
 var prim=1;
-var primtal=10000;
+var primtal=1000;
 
 //I onLoad tilføjes eventlistener
 function onLoad(){
@@ -15,7 +15,7 @@ startWatch();
 
 //måler acceleration i bestemte intervaller
 function startWatch() {
-var options = { frequency: 5 };//vis værdi hvert sekund
+var options = { frequency: 10 };//vis værdi hvert sekund
 watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options); //
 }
 
@@ -48,6 +48,7 @@ document.getElementById('accelerometer').innerHTML =
 'Acceleration X: ' + accX + '<br />' +
 'Acceleration Y: ' + accY + '<br />' +
 'Acceleration Z: ' + accZ + '<br />' +
+'Primtal: ' +  + '<br />' +
 'Timestamp: ' + timestamp + '<br />' ;
 }
 
